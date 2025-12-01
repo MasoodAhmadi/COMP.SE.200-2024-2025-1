@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test:coveralls": "npm run coverage && cat coverage/lcov.info | npx coveralls",
     "coverage": "jest --coverage --coverageReporters=lcov --coverageReporters=text",
     "coverage:tests": "jest --coverage --runInBand --coverageReporters=text"
   },
