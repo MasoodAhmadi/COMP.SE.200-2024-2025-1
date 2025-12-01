@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:coveralls": "npm run coverage && cat coverage/lcov.info | npx coveralls",
-    "coverage": "jest --coverage --coverageReporters=lcov --coverageReporters=text",
+    "coverage": "jest --coverage --coverageReporters=lcov --collectCoverageFrom='src/**/*.{js,jsx}'",
     "coverage:tests": "jest --coverage --runInBand --coverageReporters=text"
   },
   "jest": {
