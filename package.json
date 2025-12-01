@@ -6,7 +6,32 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "coverage": "jest --coverage --coverageReporters=text",
+    "coverage:tests": "jest --coverage --runInBand --coverageReporters=text"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/add.js",
+      "<rootDir>/src/camelCase.js",
+      "<rootDir>/src/ceil.js",
+      "<rootDir>/src/chunk.js",
+      "<rootDir>/src/clamp.js",
+      "<rootDir>/src/divide.js",
+      "<rootDir>/src/filter.js",
+      "<rootDir>/src/isArgument.js",
+      "<rootDir>/src/isBoolean.js",
+      "<rootDir>/src/words.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/.internal/"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ]
   },
   "author": "Masood Ahmadi",
   "license": "MIT",

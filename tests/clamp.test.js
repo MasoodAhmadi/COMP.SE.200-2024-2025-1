@@ -18,7 +18,7 @@ describe('clamp()', () => {
     expect(clamp(-5, -5, 5)).toBe(-5);
   });
 
-   test('number equal to lower bound returns lower', () => {
+  test('number equal to lower bound returns lower', () => {
     expect(clamp(-5, -5, 5)).toBe(-5);
   });
 
