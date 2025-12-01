@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
-    "coverage": "jest --coverage --coverageReporters=text",
+    "coverage": "jest --coverage --coverageReporters=lcov --coverageReporters=text",
     "coverage:tests": "jest --coverage --runInBand --coverageReporters=text"
   },
   "jest": {
