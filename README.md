@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/MasoodAhmadi/COMP.SE.200-2024-2025-1/badge.svg?branch=main)](https://coveralls.io/github/MasoodAhmadi/COMP.SE.200-2024-2025-1?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/MasoodAhmadi/COMP.SE.200-2024-2025-1/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/MasoodAhmadi/COMP.SE.200-2024-2025-1?branch=main&kill_cache=1)
 
 # Student template
 
